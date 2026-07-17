@@ -86,3 +86,25 @@ button:hover{
 
     z-index:-1;
 }
+button{
+    animation: pulsar 2s infinite;
+}
+
+@keyframes pulsar{
+
+    0%{
+        transform:scale(1);
+        box-shadow:0 0 10px #ff4d88;
+    }
+
+    50%{
+        transform:scale(1.08);
+        box-shadow:0 0 30px #ff4d88;
+    }
+
+    100%{
+        transform:scale(1);
+        box-shadow:0 0 10px #ff4d88;
+    }
+
+}
