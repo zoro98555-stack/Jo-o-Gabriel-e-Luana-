@@ -48,3 +48,22 @@ button:hover{
     transform:scale(1.05);
     background:#ff6699;
 }
+.hero{
+    animation: aparecer 2s;
+}
+
+@keyframes aparecer{
+    from{
+        opacity:0;
+        transform:translateY(40px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+button:hover{
+    box-shadow:0 0 25px #ff4d88;
+}
