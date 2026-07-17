@@ -8,10 +8,19 @@ function atualizarContador() {
 
     const diferenca = agora - inicio;
 
-    const dias = Math.floor(diferenca / (1000 * 60 * 60 * 24));
+    const segundos = Math.floor(diferenca / 1000) % 60;
+const minutos = Math.floor(diferenca / (1000 * 60)) % 60;
+const horas = Math.floor(diferenca / (1000 * 60 * 60)) % 24;
+const dias = Math.floor(diferenca / (1000 * 60 * 60 * 24));
 
-    document.getElementById("contador").innerHTML =
-        "❤️ Estamos juntos há<br><br>" + dias + " dias";
+document.getElementById("contador").innerHTML = `
+❤️ Estamos juntos há ❤️<br><br>
+
+${dias} dias<br>
+${horas} horas<br>
+${minutos} minutos<br>
+${segundos} segundos
+`;
 }
 
 atualizarContador();
