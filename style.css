@@ -200,3 +200,18 @@ button{
     border-radius:15px;
     box-shadow:0 0 15px rgba(255,77,136,0.5);
 }
+.fotos img{
+    animation: aparecerFoto 1.5s ease;
+}
+
+@keyframes aparecerFoto{
+    from{
+        opacity:0;
+        transform:translateY(30px) scale(0.9);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0) scale(1);
+    }
+}
