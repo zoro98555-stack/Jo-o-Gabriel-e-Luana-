@@ -82,7 +82,7 @@ button:hover{
                     150px 150px,
                     220px 220px;
 
-    opacity:.35;
+    opacity:.5;
 
     z-index:-1;
 }
@@ -107,4 +107,28 @@ button{
         box-shadow:0 0 10px #ff4d88;
     }
 
+}
+.heart{
+    position:fixed;
+    bottom:-20px;
+    color:#ff4d88;
+    font-size:20px;
+    animation: subir 8s linear infinite;
+    z-index:-1;
+}
+
+@keyframes subir{
+    0%{
+        transform:translateY(0);
+        opacity:0;
+    }
+
+    20%{
+        opacity:1;
+    }
+
+    100%{
+        transform:translateY(-110vh);
+        opacity:0;
+    }
 }
