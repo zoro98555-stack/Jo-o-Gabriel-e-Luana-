@@ -132,3 +132,27 @@ button{
         opacity:0;
     }
 }
+.coracao{
+    position: fixed;
+    bottom: -20px;
+    color: #ff4d88;
+    font-size: 25px;
+    animation: subirCoracao 8s linear infinite;
+    z-index: -1;
+}
+
+@keyframes subirCoracao{
+    0%{
+        transform: translateY(0) scale(1);
+        opacity: 0;
+    }
+
+    20%{
+        opacity: 1;
+    }
+
+    100%{
+        transform: translateY(-110vh) scale(1.5);
+        opacity: 0;
+    }
+}
