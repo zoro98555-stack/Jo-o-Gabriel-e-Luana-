@@ -133,26 +133,41 @@ button{
     }
 }
 .coracao{
-    position: fixed;
-    bottom: -20px;
-    color: #ff4d88;
-    font-size: 25px;
-    animation: subirCoracao 8s linear infinite;
-    z-index: -1;
+    position:fixed;
+    bottom:-20px;
+    color:#ff4d88;
+    font-size:25px;
+    animation:subirCoracao 8s linear infinite;
+    z-index:-1;
+}
+
+.coracao:nth-child(2){
+    left:20%;
+    animation-delay:2s;
+}
+
+.coracao:nth-child(3){
+    left:50%;
+    animation-delay:4s;
+}
+
+.coracao:nth-child(4){
+    left:80%;
+    animation-delay:6s;
 }
 
 @keyframes subirCoracao{
     0%{
-        transform: translateY(0) scale(1);
-        opacity: 0;
+        transform:translateY(0) scale(1);
+        opacity:0;
     }
 
     20%{
-        opacity: 1;
+        opacity:1;
     }
 
     100%{
-        transform: translateY(-110vh) scale(1.5);
-        opacity: 0;
+        transform:translateY(-110vh) scale(1.5);
+        opacity:0;
     }
 }
