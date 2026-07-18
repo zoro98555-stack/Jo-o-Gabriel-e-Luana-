@@ -24,11 +24,13 @@ function atualizarContador() {
 const minutos = Math.floor(diferenca / (1000 * 60)) % 60;
 const horas = Math.floor(diferenca / (1000 * 60 * 60)) % 24;
 const dias = Math.floor(diferenca / (1000 * 60 * 60 * 24));
-
+const meses = Math.floor(dias / 30);
+const diasRestantes = dias % 30;
 document.getElementById("contador").innerHTML = `
 ❤️ Estamos juntos há ❤️<br><br>
 
-${dias} dias<br>
+${meses} meses<br>
+${diasRestantes} dias<br>
 ${horas} horas<br>
 ${minutos} minutos<br>
 ${segundos} segundos
