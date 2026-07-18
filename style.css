@@ -215,3 +215,11 @@ button{
         transform:translateY(0) scale(1);
     }
 }
+.fotos img{
+    transition:0.3s ease;
+    cursor:pointer;
+}
+
+.fotos img:hover{
+    transform:scale(1.08);
+}
