@@ -1,4 +1,15 @@
+const texto = "João Gabriel ❤️ Luana";
+let indice = 0;
 
+function escreverNome() {
+    if (indice < texto.length) {
+        document.getElementById("titulo").innerHTML += texto.charAt(indice);
+        indice++;
+        setTimeout(escreverNome, 150);
+    }
+}
+
+escreverNome();
 document.querySelector("button").addEventListener("click", function () {
     window.location.href = "historia.html";
 });
