@@ -39,3 +39,12 @@ ${segundos} segundos
 
 atualizarContador();
 setInterval(atualizarContador, 1000);
+function tocarMusica(){
+    const musica = document.getElementById("musica");
+
+    if(musica.paused){
+        musica.play();
+    } else {
+        musica.pause();
+    }
+}
